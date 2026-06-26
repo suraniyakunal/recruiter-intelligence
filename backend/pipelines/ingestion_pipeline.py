@@ -17,7 +17,9 @@ from skills.bm25 import BM25Vocab
 
 async def run_ingestion(data_path: str):
     await init_db()
+    print("Database initialized.")
     model = get_model()
+    print("Embedding model loaded.")
     raw_dir = Path(data_path)
     processed_dir = Path("data/processed")
     processed_dir.mkdir(exist_ok=True)
