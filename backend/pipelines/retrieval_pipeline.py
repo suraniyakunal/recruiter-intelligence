@@ -8,6 +8,7 @@ from backend.vectorstore.qdrant import hybrid_search
 from backend.keyword.bm25 import BM25Vocab  # You'll need to import BM25Builder here for loading
 from backend.models.reranker import rerank_candidates
 from sklearn.preprocessing import MinMaxScaler
+from skills.bm25 import BM25Vocab
 
 async def retrieve_candidates(
     jd_data: dict,  # {"text": "...", "skills": [...], "filters": {...}}
