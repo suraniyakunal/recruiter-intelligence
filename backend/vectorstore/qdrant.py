@@ -7,7 +7,7 @@ from typing import List, Dict, Optional
 
 COLLECTION_NAME = "candidates"
 
-client = QdrantClient(location=":memory:")   # embedded, ephemeral
+client = QdrantClient(path="./qdrant_data")   # embedded, ephemeral
 
 def create_collection():
     """Create or recreate the collection with dense + sparse vector config."""
