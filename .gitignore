@@ -43,6 +43,7 @@ htmlcov/
 # ==========================================
 *.db
 *.sqlite3
+*.sqlite
 
 # ==========================================
 # Node.js
@@ -125,3 +126,5 @@ coverage/
 # Generated Docs
 # ==========================================
 docs/generated/
+backend/data/raw/candidates.jsonl
+backend/qdrant_data/.lock
